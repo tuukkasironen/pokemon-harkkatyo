@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pokémon-haku</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><nav><a class="logo" href="index.html">Pokémon-haku</a><div class="nav-links"><a href="index.html">Etusivu</a><a class="active" href="haku.html">Pokémon-haku</a><a href="tietoa.html">Tietoa</a></div></nav></header>
+<main class="container"><section class="card"><h1>Pokémon-haku</h1><p>Kirjoita Pokémonin nimi englanniksi ja hae tiedot.</p><form id="searchForm" class="search-form"><label for="pokemon">Pokémonin nimi</label><div class="search-row"><input type="text" id="pokemon" placeholder="Esim. pikachu" value="pikachu"><button type="submit">Hae</button></div></form></section>
+<section class="card pokemon-card"><h2>Pokémonin tiedot</h2><img id="pokemonImage" class="pokemon-image" src="" alt=""><div class="pokemon-info"><p><strong>Nimi:</strong> <span id="name">-</span></p><p><strong>Tyyppi:</strong> <span id="types">-</span></p><p><strong>Pituus:</strong> <span id="height">-</span></p><p><strong>Paino:</strong> <span id="weight">-</span></p></div><p id="error" class="error"></p></section></main>
+<footer><p>Selainohjelmointi | Pokémon-haku</p></footer><script src="script.js"></script>
+</body></html>

@@ -1,0 +1,29 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f2f2f2; color: #222; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+header { background: #6b2bb5; color: white; }
+nav { max-width: 1000px; margin: 0 auto; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.logo { color: white; text-decoration: none; font-size: 1.35rem; font-weight: bold; }
+.nav-links { display: flex; gap: 8px; flex-wrap: wrap; }
+.nav-links a { color: white; text-decoration: none; padding: 8px 12px; border-radius: 5px; }
+.nav-links a:hover, .nav-links a.active { background: rgba(255,255,255,.2); }
+.container { width: min(900px, 92%); margin: 40px auto; flex: 1; }
+.hero { background: white; text-align: center; padding: 55px 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.1); margin-bottom: 25px; }
+.hero h1 { font-size: 2.5rem; margin-bottom: 12px; }
+.hero p { margin-bottom: 25px; }
+.button, button { display: inline-block; background: #6b2bb5; color: white; border: 0; border-radius: 6px; padding: 12px 22px; font-size: 1rem; text-decoration: none; cursor: pointer; }
+.button:hover, button:hover { background: #51208d; }
+.card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.1); margin-bottom: 25px; }
+.card h1, .card h2 { margin-bottom: 15px; }
+.card h2:not(:first-child) { margin-top: 25px; }
+.search-form label { display: block; margin-bottom: 8px; font-weight: bold; }
+.search-row { display: flex; gap: 10px; }
+.search-row input { flex: 1; padding: 12px; border: 1px solid #bbb; border-radius: 6px; font-size: 1rem; }
+.pokemon-card { text-align: center; }
+.pokemon-image { width: 220px; height: 220px; object-fit: contain; display: block; margin: 10px auto 25px; background: #eee; border-radius: 12px; }
+.pokemon-info { max-width: 500px; margin: 0 auto; text-align: left; }
+.pokemon-info p { padding: 10px 0; border-bottom: 1px solid #eee; }
+.error { color: #b00020; margin-top: 15px; }
+.card a { color: #6b2bb5; }
+.card ul { padding-left: 25px; }
+footer { background: #222; color: white; text-align: center; padding: 22px; margin-top: auto; }
+@media (max-width: 600px) { nav { flex-direction: column; align-items: flex-start; } .search-row { flex-direction: column; } .search-row input, .search-row button { width: 100%; } .hero h1 { font-size: 2rem; } }
